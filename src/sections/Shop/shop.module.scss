@@ -1,0 +1,95 @@
+.section {
+  min-height: calc(var(--vh, 1vh) * 100);
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  font-size: var(--fontxxxl);
+  font-family: "Kaushan Script";
+  font-weight: 300;
+  color: var(--text);
+  text-shadow: 1px 1px 1px var(--body);
+  position: absolute;
+  top: 1rem;
+  left: 5%;
+  z-index: 11;
+  @media (max-width: 64em) {
+    font-size: var(--fontxxl);
+  }
+  @media (max-width: 48em) {
+    font-size: var(--fontxl);
+  }
+}
+
+.left {
+  width: 35%;
+  background-color: var(--body);
+  color: var(--text);
+  min-height: calc(var(--vh, 1vh) * 100);
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: var(--fontlg);
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media (max-width: 64em) {
+    p {
+      font-size: var(--fontmd);
+    }
+  }
+  @media (max-width: 48em) {
+    width: 40%;
+    p {
+      font-size: var(--fontsm);
+    }
+  }
+  @media (max-width: 30em) {
+    p {
+      font-size: var(--fontxs);
+    }
+  }
+}
+
+.right {
+  position: absolute;
+  left: 35%;
+  padding-left: 30%;
+  background-color: var(--grey);
+  min-height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item {
+  display: inline-block;
+  width: 20rem;
+  margin-right: 6rem;
+  img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  h1 {
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+  }
+  @media (max-width: 48em) {
+    width: 15rem;
+  }
+}

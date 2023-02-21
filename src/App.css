@@ -1,0 +1,80 @@
+html.has-scroll-smooth {
+  max-height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;  
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Sirin Stencil';
+  max-height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 100);
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.App {
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+}
+
+/* :root {
+  --body: #fff;
+  --text: #202020;
+  --bodyRgba: 255, 255, 255;
+  --textRgba: 32,32,32;
+
+  --grey: #bebebe;
+
+  --fontxs: 0.75em;
+  --fontsm: 0.875em;
+  --fontmd: 1em; 
+  --fontlg: 1.25em;
+  --fontxl: 2em;
+  --fontxxl: 3em;
+  --fontxxxl: 5em;
+  --fontBig: 10em;
+
+  --navHeight: 5rem;
+} */
+
+:root {
+  --body: #202020;
+  --text: #fff;
+  --bodyRgba: 32,32,32;
+  --textRgba: 255, 255, 255;
+
+  --grey: #bebebe;
+
+  --fontxs: 0.75em;
+  --fontsm: 0.875em;
+  --fontmd: 1em;
+  --fontlg: 1.25em;
+  --fontxl: 2em;
+  --fontxxl: 3em;
+  --fontxxxl: 5em;
+  --fontBig: 10em;
+
+  --navHeight: 5rem;
+}

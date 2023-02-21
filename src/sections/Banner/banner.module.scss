@@ -1,0 +1,51 @@
+.section {
+  min-height: calc(var(--vh, 1vh) * 100);
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @media (max-width: 48em) {
+    width: 90vw;
+  }
+}
+
+.container {
+  min-height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  @media (max-width: 64em) {
+    justify-content: center;
+  }
+}
+
+.bannerComponent {
+  font-size: var(--fontxxxl);
+  font-family: "Kaushan Script";
+  color: var(--text);
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 1;
+  @media (max-width: 70em) {
+    font-size: var(--fontxxl);
+  }
+  @media (max-width: 64em) {
+    margin: 1rem 0;
+  }
+
+  @media (max-width: 48em) {
+    font-size: var(--fontxl);
+    margin: 0.5rem 0;
+  }
+  @media (max-width: 30em) {
+    font-size: var(--fontlg);
+  }
+  span {
+    display: block;
+    background-color: var(--body);
+    padding: 1rem 2rem;
+  }
+}

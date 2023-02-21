@@ -1,0 +1,31 @@
+.container {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 6;
+  width: 100%;
+  width: fit-content;
+  a {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  svg {
+    width: 4rem;
+    height: auto;
+    overflow: visible;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    g {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+.text {
+  font-size: var(--fontlg);
+  color: var(--text);
+  padding-bottom: 0.5rem;
+}
